@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>title</title>
+
+    <link rel="stylesheet" href="../assets/frontend/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/frontend/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/frontend/css/styles.css">
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="container p-0">
+            <div class="row align-items-center">
+                <!-- Başlıklar -->
+                <div class="col-12 text-center">
+                    <h1>rahvalı</h1>
+                    <h2 class="text-muted">#dev</h2>
+                </div>
+
+                <!-- Butonlar -->
+                <div class="col-12 text-center">
+                    <div class="d-inline-block">
+                        <a href="/frontend/page-cv.html"
+                            class="btn btn-outline-dark pages mt-1 btn-square-black">Hakkımda</a>
+                        <a href="/frontend/page-blogs.html"
+                            class="btn btn-outline-dark pages mt-1 btn-square-black">Yazılar</a>
+                        <a href="/frontend/page-gallery.html"
+                            class="btn btn-outline-dark pages mt-1 btn-square-black">Galeri</a>
+                        <a href="/frontend/page-support.html"
+                            class="btn btn-outline-dark pages mt-1 btn-square-black">Destek</a>
+                        <a href="/frontend/page-referans.html"
+                            class="btn btn-outline-dark pages mt-1 btn-square-black">Referans</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line mb-3"></div>
+        <!-- İÇERİK -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row gallery g-3">
+                    <!-- Galeri Öğesi -->
+                    <div class="col-md-4 col-sm-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="../assets/frontend/images/network.png">
+                            <img src="../assets/frontend/images/network.png" class="img-fluid rounded gallery-item" alt="Gallery Image 1">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="../assets/frontend/images/network.png">
+                            <img src="../assets/frontend/images/network.png" class="img-fluid rounded gallery-item" alt="Gallery Image 1">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="../assets/frontend/images/network.png">
+                            <img src="../assets/frontend/images/network.png" class="img-fluid rounded gallery-item" alt="Gallery Image 1">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="../assets/frontend/images/network.png">
+                            <img src="../assets/frontend/images/network.png" class="img-fluid rounded gallery-item" alt="Gallery Image 1">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="../assets/frontend/images/network.png">
+                            <img src="../assets/frontend/images/network.png" class="img-fluid rounded gallery-item" alt="Gallery Image 2">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="../assets/frontend/images/network.png">
+                            <img src="../assets/frontend/images/network.png" class="img-fluid rounded gallery-item" alt="Gallery Image 3">
+                        </a>
+                    </div>
+                    <!-- Diğer Galeri Öğeleri -->
+                </div>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <img src="" class="img-fluid w-100" id="modalImage" alt="Büyütülmüş Görsel">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer text-center my-3">
+            <div class="line mb-3"></div>
+            <p>
+                <i class="bi bi-c-circle-fill"></i> Rıfat Rahvalı <b>2024</b>
+            </p>
+        </div>
+    </div>
+    <script src="../assets/frontend/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Modal açıldığında ilgili görseli göster
+        const galleryModal = document.getElementById('galleryModal');
+        galleryModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget; // Tıklanan galeri öğesi
+            const imageSrc = button.getAttribute('data-bs-image'); // Görselin kaynağı
+            const modalImage = document.getElementById('modalImage'); // Modal içindeki görsel
+            modalImage.src = imageSrc; // Modal görsel kaynağını güncelle
+        });
+    </script>
+</body>
+</html>
