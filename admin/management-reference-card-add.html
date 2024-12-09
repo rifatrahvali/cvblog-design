@@ -104,27 +104,52 @@
 
             <!-- İÇERİKLER -->
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <!-- İÇERİK BAŞLIK -->
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h2>Destek Yönetimi</h2>
-                </div>
-
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="custom-card text-center">
-                            <div class="custom-card-body">
-                                <div class="custom-card-title">
-                                    <a href="management-support-card.html">
-                                        <h3 class="fs-2"><i class="bi bi-envelope-paper-fill me-4"></i>Destek</h3>
-                                    </a>
-                                </div>
-                                <p class="custom-card-text">mevcut destek taleplerinin listelendiği yer.</p>
-                            </div>
+                    <h2>Referans Bölümüne Görsel Ekle</h2>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <a href="management-reference-card.html" class="btn btn-secondary">Geri Dön</a>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-file-earmark-excel-fill"></i> Dışa aktar
+                            </button>
                         </div>
                     </div>
                 </div>
+                <!-- İÇERİK GÖVDE -->
+                <div class="row gy-4">
+                    <form class="row g-3" method="">
 
+                        <div class="col-md-8">
+                            <div class="col-md-12">
+                                <label class="input-group-text mb-2" for="reference_image">Referans Görseli *</label>
+                                <input type="file" class="form-control" name="reference_image" id="reference_image">
+                            </div>
+                            <div class="col-md-12 mt-2">
+                                <!-- Kurs Adı -->
+                                <div class="col-md-12">
+                                    <label for="reference_name" class="form-label"><strong>Referans Adı</strong></label>
+                                    <input type="text" class="form-control" id="reference_name" name="reference_name"
+                                        placeholder="Görsel Adı" value="">
+                                </div>
+                                <!-- Şehir -->
+                                <div class="col-md-12 mt-2">
+                                    <label for="reference_comment" class="form-label"><strong>Referans Açıklaması</strong></label>
+                                    <input type="text" class="form-control" id="reference_comment" name="reference_comment"
+                                        placeholder="Görsel Açıklaması" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="../assets/admin/images/profil.png" class="img-thumbnail" alt="...">
+                        </div>
+                        <div class="d-grid gap-2 col-md-6 mx-auto">
+                            <button class="btn btn-secondary" type="button">Kaydet</button>
+                        </div>
+                    </form>
 
+                </div>
             </main>
         </div>
     </div>
