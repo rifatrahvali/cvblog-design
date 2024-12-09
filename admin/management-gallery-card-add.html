@@ -104,25 +104,52 @@
 
             <!-- İÇERİKLER -->
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <!-- İÇERİK BAŞLIK -->
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h2>Galeri Yönetimi</h2>
-                </div>
-
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="custom-card text-center">
-                            <div class="custom-card-body">
-                                <h5 class="custom-card-title"><a href="management-gallery-card.html">
-                                        <h3 class="fs-2"><i class="bi bi-camera2 me-3"></i> Galeri Görselleri</h3>
-                                    </a></h5>
-                                <p class="custom-card-text">Galeri Sayfasına görsel ekleme bölümü ve mevcut görsellerin listelendiği yer.</p>
-                            </div>
+                    <h2>Galeri Bölümüne Görsel Ekle</h2>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <a href="management-cv-education-card.html" class="btn btn-secondary">Geri Dön</a>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-file-earmark-excel-fill"></i> Dışa aktar
+                            </button>
                         </div>
                     </div>
                 </div>
+                <!-- İÇERİK GÖVDE -->
+                <div class="row gy-4">
+                    <form class="row g-3" method="">
 
+                        <div class="col-md-8">
+                            <div class="col-md-12">
+                                <label class="input-group-text mb-2" for="gallery_image">Profil Görseli *</label>
+                                <input type="file" class="form-control" name="gallery_image" id="gallery_image">
+                            </div>
+                            <div class="col-md-12 mt-2">
+                                <!-- Kurs Adı -->
+                                <div class="col-md-12">
+                                    <label for="gallery_name" class="form-label"><strong>Görsel Adı</strong></label>
+                                    <input type="text" class="form-control" id="gallery_name" name="gallery_name"
+                                        placeholder="Görsel Adı" value="">
+                                </div>
+                                <!-- Şehir -->
+                                <div class="col-md-12 mt-2">
+                                    <label for="gallery_comment" class="form-label"><strong>Görsel Açıklaması</strong></label>
+                                    <input type="text" class="form-control" id="gallery_comment" name="gallery_comment"
+                                        placeholder="Görsel Açıklaması" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="../assets/admin/images/profil.png" class="img-thumbnail" alt="...">
+                        </div>
+                        <div class="d-grid gap-2 col-md-6 mx-auto">
+                            <button class="btn btn-secondary" type="button">Kaydet</button>
+                        </div>
+                    </form>
 
+                </div>
             </main>
         </div>
     </div>
