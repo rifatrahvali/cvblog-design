@@ -13,22 +13,39 @@ body.modal-open {
     padding: 20px;
 }
 
-/* Başlıklar arasındaki mesafeyi azaltma */
-h1 {
-    margin-top: 0.01rem !important;
-    margin-bottom: 0.01rem !important;
+nav{
+    margin-bottom: 0;
+}
+nav.navbar {
+    margin-bottom: 0; /* Nav altında boşluk bırakma */
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Ortaya hizalar */
+    flex-wrap: nowrap; /* Düzgün bir satırda kalmasını sağlar */
+    gap: 10px; /* Butonlar arasındaki boşluğu ayarlar */
 }
 
-h2 {
-    margin-top: 0.01rem !important;
+.nav-item {
+    flex: 1; /* Butonları eşit genişlikte yayar */
+    text-align: center; /* Metni buton içinde ortalar */
 }
 
-/* Alt çizgi */
+.pages {
+    width: 100%; /* Butonları yatayda eşit yapar */
+}
+
 .line {
-    border-bottom: 1px solid #bbc1c7;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    border-bottom: 1px solid #bbc1c7; /* Çizgi rengi ve stili */
+    margin-bottom: 10px; /* Alt boşluğu düzenle */
 }
+/* Alt çizgi */
+/* .line {
+    border-bottom: 1px solid #bbc1c7;
+    margin-bottom: 20px;
+} */
+
 
 /* Özel buton stili: Kare köşe ve siyah kenarlık */
 .btn-square-black {
